@@ -22,7 +22,8 @@ Ensure you have the following installed:
 ### Clone the repository:
 
 ```bash
-git clone [https://github.com/tochukwu19/Giddaa-Test]
+git clone [https://github.com/tochukwu19/Giddaa-Test.git]
+cd Giddaa-Test
 ```
 
 ### Install dependencies:
