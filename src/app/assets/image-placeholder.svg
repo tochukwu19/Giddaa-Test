@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+
+  <!-- Centered content group -->
+  <g transform="translate(130, 90)">
+    <!-- Image icon -->
+    <rect 
+      x="0" 
+      y="0" 
+      width="140" 
+      height="100" 
+      rx="8" 
+      fill="none" 
+      stroke="#cbd5e1" 
+      stroke-width="2"
+    />
+    
+    <!-- Mountain peaks representing landscape -->
+    <path 
+      d="M15,85 L45,45 L75,70 L105,30 L125,85" 
+      fill="none" 
+      stroke="#cbd5e1" 
+      stroke-width="2"
+    />
+    
+    <!-- Sun circle -->
+    <circle 
+      cx="35" 
+      cy="30" 
+      r="8" 
+      fill="#cbd5e1"
+    />
+  </g>
+
+  <!-- Text -->
+  <text 
+    x="200" 
+    y="220" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-size="14" 
+    fill="#64748b" 
+    text-anchor="middle" 
+    font-weight="500"
+  >
+    No image available
+  </text>
+</svg>

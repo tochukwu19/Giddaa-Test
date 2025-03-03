@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .border-gradient {
+    border-image-source: linear-gradient(to right, #FBBF24, #166534);
+    border-image-slice: 1;
+  }
+}
+
 
 :root {
   --background: #ffffff;
@@ -16,6 +28,113 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.spectral-bold-normal {
+  font-family: "Spectral", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.parallax-1 {
+  background-image: url("./assets/test-image2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2 {
+  background-image: url("./assets/test-image1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3 {
+  background-image: url("./assets/test-image3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-bg {
+  background-image: url("./assets/testimonial.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products, .whyus {
+  background-image: url("./assets/rounded-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rounded-border {
+  width: 300px;
+  height: 80px;
+  border: double 1em transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, green, gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.shadow-custom {
+  transition: 0.2s ease-in-out all;
+
+  &:hover {
+    box-shadow: 7px 0px 0px 5px #335F32;
+    -webkit-box-shadow: 7px 0px 0px 5px #335F32;
+    -moz-box-shadow: 7px 0px 0px 5px #335F32;
+  }
+
+}
+
+.short-border {
+  position: relative;
+}
+
+
+.short-border:after {
+  content: "";
+  background: #335f32;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 7%;
+  margin: -5px auto;
+  right: 0;
+}
+
+.giddaa-buy {
+    border: double 3px transparent;
+    border-radius: 16px;
+    background-image: linear-gradient(white, white),
+      linear-gradient(to right, #EAA315, #335F32);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
